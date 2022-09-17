@@ -30,11 +30,11 @@ namespace Loops_review
                 WriteLine(Number * i);
             return null;
         }
-        public static int? For8(int NumberA, int NumberB, int NumberC = 1)
+        public static int? For8(int NumberA, int NumberB, int Result = 1)
         {
             for (int i = NumberA; i <= NumberB; i++)
-                NumberC += i;
-            return null;
+                Result += i;
+            WriteLine(Result);
         }
         public static float For10(int Number, float Result = 0)
         {
