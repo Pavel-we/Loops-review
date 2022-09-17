@@ -251,26 +251,15 @@ namespace Loops_review
             }
             return Result;
         }
-        public static int While18(int NumberA, int NumberB = 0, int NumberC = 0, int NumberD = 1, int Result = 0)
+        public static int? While18(int Number, int NumberA = 0, int NumberB = 0)
         {
-            while (NumberA >= 100)
-            {
-                NumberB++;
-                NumberA -= 100;
-            }
-            NumberA -= NumberB * 100;
-            while (NumberA >= 10)
-            {
-                NumberC++;
-                NumberA -= 10;
-            }
-            NumberA -= NumberC * 10;
-            if (NumberB > 0) NumberD++;
-            if (NumberC > 0) NumberD++;
-
-            Write(NumberA + NumberC + NumberB);
-            return Result;
-        }
+           while (Number > 0)
+           {
+               NumberA++;
+               NumberB += Number % 10;
+               Number /= 10;
+           }
+           return null;
         public static bool While20(int Number)
         {
             while (Number > 0)
