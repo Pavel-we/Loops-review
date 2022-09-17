@@ -317,17 +317,6 @@ namespace Loops_review
             }
             return NumberB;
         }
-        public static int While30(double NumberA, double NumberB, double NumberC, double NumberD, double NumberE, int Number = 0)
-        {
-            NumberD = NumberA * NumberB / 2;
-            NumberE = NumberC * NumberC;
-            while (NumberD >= NumberE)
-            {
-                NumberD -= NumberE;
-                Number++;
-            }
-            return Number;
-        }
         #endregion
     
     } 
